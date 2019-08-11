@@ -1,7 +1,12 @@
 <resources>
-    <string name="app_name">ParseInstagram</string>
-    <string name="password">Password</string>
-    <string name="log_in">Log In</string>
-    <string name="username">Username</string>
+    <string name="app_name">Parse-Stagram</string>
+    <string name="log_in">Sign In</string>
     <string name="enter_description">Enter Description</string>
+    <string name="back_to_login_page">Back to login page</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="fill_form_to_sign_up">Fill Form to Sign Up</string>
 </resources>

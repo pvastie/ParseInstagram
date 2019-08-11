@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bginstagram"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
@@ -12,10 +13,11 @@
         android:layout_width="319dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:hint="@string/username"
+        android:layout_marginTop="210dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/tPassword"
@@ -29,7 +31,9 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="24sp" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -38,6 +42,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tPassword"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/colorDarkBlue"
         android:layout_marginTop="25dp"
         android:text="@string/log_in" />
+
+    <Button
+        android:id="@+id/btnNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="New User" />
 </RelativeLayout>

@@ -3,4 +3,22 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorLightBlue">#ADD8E6</color>
+    <color name="colorLightSkyBlue">#87CEFA</color>
+    <color name="colorSkyBlue">#87CEEB</color>
+    <color name="colorOtherBlue">#68ABC8</color>
+    <color name="colorLimeGreen">#32CD32</color>
+    <color name="colorWrite">#FFFFFF</color>
+    <color name="colorCornFlowerBlue">#6495ED</color>
+    <color name="colorRoyalBlue">#4169E1</color>
+    <color name="colorCadetBlur">#59FEA0</color>
+    <color name="colorBlueGreen">#0095D0</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="colorDarkBlue">#00008D</color>
+    <color name="colorRougeInsta">#C53364</color>
+    <color name="colorOtherGreen">#84BC30</color>
+    <color name="colorBleuInsta">#17EAD9</color>
+    <color name="colorGainsBoro">#DCDCDC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkRed">#8B000000</color>
 </resources>

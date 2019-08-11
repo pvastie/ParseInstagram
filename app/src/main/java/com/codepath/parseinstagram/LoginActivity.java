@@ -1,8 +1,9 @@
 package com.codepath.parseinstagram;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
+    private Button btnNewUser;
+
 
 
 
@@ -27,9 +30,23 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_login );
 
+        ActionBar actionBar = getSupportActionBar(); // give access to action Bar in java
+        actionBar.setTitle( "Parse-Stagram" );
+        String title = actionBar.getTitle().toString();
+
+
         etUsername = findViewById( R.id.etUsername );
         etPassword = findViewById( R.id.etPassword );
         btnLogin = findViewById( R.id.btnLogin );
+        btnNewUser = findViewById( R.id.btnNewUser );
+
+        btnNewUser.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( LoginActivity.this, SignupActivity.class );
+                startActivity( intent );
+            }
+        } );
 
         btnLogin.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -41,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         } );
     }
+
 
     private void login(String username, String password) {
         ParseUser.logInInBackground( username, password, new LogInCallback() {
