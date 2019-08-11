@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 savePost(description, user, photoFile);
+                Intent i = new Intent( MainActivity.this, PostActivity.class );
+                startActivity(i);
             }
         } );
     }

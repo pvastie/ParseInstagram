@@ -21,4 +21,6 @@ public class ParseApplication extends Application {
                 //.clientBuilder(builder)
                 .server("https:vastie-instagram.herokuapp.com/parse").build());
     }
+
+
 }
