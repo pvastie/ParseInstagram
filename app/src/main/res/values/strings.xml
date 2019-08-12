@@ -9,4 +9,6 @@
     <string name="email_address">Email Address</string>
     <string name="enter_your_username">Enter your username</string>
     <string name="fill_form_to_sign_up">Fill Form to Sign Up</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -11,6 +11,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnTakePic;
     private ImageView ivPostImage;
     private  Button btnSubmit;
+    private MenuItem miCompose;
 
 
     @Override
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         btnTakePic = findViewById( R.id.btnTakePic );
         ivPostImage = findViewById( R.id.ivPostImage );
         btnSubmit = findViewById( R.id.btnSubmit );
+
+        miCompose = findViewById( R.id.miCompose );
 
 
         btnTakePic.setOnClickListener( new View.OnClickListener() {
@@ -174,5 +179,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         } );
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mainmenu, menu);
+        return true;
+    }
+
+    public void onComposeAction (MenuItem mi){
+        miCompose.setOnMenuItemClickListener( new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                ParseUser.logOut();
+                return true;
+            }
+        } );
+
     }
 }

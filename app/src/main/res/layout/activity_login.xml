@@ -38,21 +38,24 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tPassword"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorDarkBlue"
+        android:background="@drawable/button"
         android:layout_marginTop="25dp"
-        android:text="@string/log_in" />
+        android:text="@string/log_in"
+        android:textColor="@color/colorDarkBlue" />
 
     <Button
         android:id="@+id/btnNewUser"
-        android:layout_width="wrap_content"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="20dp"
+        android:layout_below="@id/btnLogin"
         android:layout_alignParentEnd="true"
-        android:text="New User" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonsignup"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="56dp"
+        android:text="Sign Up" />
 </RelativeLayout>

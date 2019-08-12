@@ -1,9 +1,17 @@
 package com.codepath.parseinstagram;
 
+import android.graphics.Movie;
+
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @ParseClassName("Post")
@@ -35,4 +43,6 @@ public class Post extends ParseObject {
     public void setUser(ParseUser parseUser){
         put(KEY_USER, parseUser);
     }
+
+
 }

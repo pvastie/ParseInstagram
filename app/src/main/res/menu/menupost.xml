@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/miCompose"
+        android:id="@+id/miPost"
         android:icon="@mipmap/ic_launcher"
-        android:title="Logout"
-        android:onClick="onComposeAction"
+        android:title="Back"
+        android:onClick="onCompose"
         app:showAsAction="always|withText"></item>
 
 </menu>

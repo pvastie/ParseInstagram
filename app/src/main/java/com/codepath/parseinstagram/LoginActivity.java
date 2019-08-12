@@ -13,6 +13,9 @@ import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
+import static com.codepath.parseinstagram.R.id;
+import static com.codepath.parseinstagram.R.layout;
+
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
@@ -28,17 +31,17 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_login );
+        setContentView( layout.activity_login );
 
         ActionBar actionBar = getSupportActionBar(); // give access to action Bar in java
         actionBar.setTitle( "Parse-Stagram" );
         String title = actionBar.getTitle().toString();
 
 
-        etUsername = findViewById( R.id.etUsername );
-        etPassword = findViewById( R.id.etPassword );
-        btnLogin = findViewById( R.id.btnLogin );
-        btnNewUser = findViewById( R.id.btnNewUser );
+        etUsername = findViewById( id.etUsername );
+        etPassword = findViewById( id.etPassword );
+        btnLogin = findViewById( id.btnLogin );
+        btnNewUser = findViewById( id.btnNewUser );
 
         btnNewUser.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -58,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         } );
     }
+
 
 
     private void login(String username, String password) {
